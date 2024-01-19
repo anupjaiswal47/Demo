@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image tag</title>
+	<style type="text/css">
+		.image{
+/*		transition-delay: 2s;*/
+		transition-duration: 2s;
+	}
+	.image:hover{
+		border-radius: 250px;
+/*		transition-delay: 2s;*/
+		box-shadow: 70px 80px 70px cornflowerblue;
+	}
+	</style>
+	<script>
+		const url="http://127.0.0.1:5501/Image.html"
+		console.log(url.replace("http://127.0.0.1:5501", "Home"));
+	</script>
+</head>
+<body>
+	<div align="center">
+		<h1>This is our Image</h1>
+		<img src="demo.jpg" height="500px" width="500px" border="4px" class="image">
+		<!-- <img src="Users/anupjaiswal/Camera/IMG20200221134509.jpg" height="500px" width="500px" border="4px" class="image"> -->
+	</div>
+
+</body>
+</html>

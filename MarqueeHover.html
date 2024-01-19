@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Hovering</title>
+</head>
+<body>
+    <div>
+        <marquee behavior="alternate" onmouseover="stp()" height="12%" onmouseout="strt()" style="cursor: grab; line-size: 50px" id="mrq">Catche me Buddy</marquee>
+    </div>
+    
+    <script type="text/javascript">
+        let mrq = document.getElementById("mrq");
+        function stp(){
+            mrq.stop()
+            mrq.innerHTML="Don't to encounter buddy  &#128512;"
+        }
+        function strt(){
+            mrq.start()
+            mrq.innerHTML="Catched it Again 😂"
+        }
+
+    </script>
+</body>
+</html>

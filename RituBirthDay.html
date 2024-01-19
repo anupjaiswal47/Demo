@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Hovering</title>
+</head>
+<body>
+    <div align="center">
+        <marquee behavior="alternate" onmouseover="stp()" height="12%" onmouseout="strt()" width="15%" scrollamount="10" style="cursor: grab; " id="mrq">Happy Birthday</marquee>
+    </div>
+    
+    <script type="text/javascript">
+        let mrq = document.getElementById("mrq");
+        function stp(){
+            mrq.stop()
+            mrq.innerHTML="https://pixabay.com/photos/cake-dessert-icing-frosting-6292573/"
+            // mrq.innerHTML= "<img src="https://pixabay.com/photos/cake-dessert-icing-frosting-6292573/" height="500px;" width="500px;" border="4px;" class="image;" />"
+        }
+        function strt(){
+            mrq.start()
+            mrq.innerHTML="Catched it Again 😂"
+        }
+
+    </script>
+</body>
+</html>

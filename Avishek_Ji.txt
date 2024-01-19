@@ -1,0 +1,145 @@
+#include<stdio.h>
+#include<stdlib.h>
+void Star(int i)
+{
+    // int i;
+    for(; i>=0; i--)
+    {
+        printf("*$#");
+    }
+}
+void Line(int l)
+{
+    for(; l>=0; l--)
+    {
+        printf("\n");
+    }
+}
+void HName()
+{
+    printf("\t\t\t\t\t\tWelcome To Rambagh Palace\n");
+}
+void Menu()
+{
+    
+    printf("\n\t\t\tChoose one of those..\n");
+    printf("\n\t\t\t 1. For Room\n\t\t\t 2. For Bussiness\n\t\t\t 3. For Collaboration\n\t\t\t 4. For Room Cancilation\n\t\t\t 5. About Us\n\t\t\t 6. Contact Us\n\t\t\t 7. To Follow Our Page.\n\t\t\t 9. Main Menu.\n\t\t\t 0. To EXIT");
+    
+}
+int Option()
+{
+    unsigned int o;
+    printf("\n\n\t\tEnter Your Choice \t: ");
+    scanf("%d",&o);
+    return o;
+}
+void HMenu()
+{
+    system("clear");
+    Star(51);
+    Line(8);
+    HName();
+    
+}
+void SubMenu()
+{
+     printf("\n\n\n\n\t\tChoose one of those..");
+    printf("\n\t\t\t\b\b1. Back\n\t\t\t\b\b2. Main Menu\n\t\t\t\b\b3. About Us\n\t\t\t\b\b4. Contact Us\n\t\t\t\b\b5. To Follow Our Page.\n\t\t\t\b\b0. To EXIT");
+}
+
+int main()
+{
+    // printf("Hey there this is ..");
+    int flag=5,sm=0;
+    int o;
+    HMenu();
+    while(flag)
+    {
+    Menu();
+        while(1)
+        {
+            if(sm)
+            {
+                SubMenu();
+            }
+            o=Option();
+            switch(o)
+            {
+                case 1:
+                    system("clear");
+                    printf("\n\n The Rooms are : ");
+                    printf("\n\n 101,103,104,105,106,107,108,109,110");
+                    printf("\n\n 201,202,203,204,205,206,207,208,209,210");
+                    printf("\n\n 301,302,303,304,305,306,307,308,309,310");
+                    printf("\n\n 401,402,403,404,405,406,407,408,409,410");
+                    printf("\n\n 501,502,503,504,505,506,507,508,509,510");
+                    printf("\n\n 601,602,603,604,605,606,607,608,609,610");
+                    // printf("Room Servises \n");
+                    break;
+                case 2:
+                    system("clear");
+                    printf("\n\n The Hall For Businesses : ");
+                    printf("\n\n Meeting Hall\n\n Seminar Hall\n\n Party Hall\n\n Wedding Hall");
+                    // printf("Room Bussiness \n");
+                    break;
+                case 3:
+                    system("clear");
+                    printf("\n\nCollaboration : ");
+                    printf("\n\nVitual Collaboration\nAsset Collaboration\nnOnline Collaboration");
+                    // printf("Room Collaboration \n");
+                    break;
+                case 4:
+                    system("clear");
+                    printf("\n\nCancillation Menu");
+                    printf("\n\nCancillation against Booking Room/Hall/MOU");
+                    // printf("Room Cancillation \n");
+                    break;
+                case 5:
+                    system("clear");
+                    printf("\n\nAbout Us \n");
+                    // printf("\n\nWelcome to Rambagh Palace, \nwhere luxury meets comfort in the heart of [Your Location]. Our meticulously designed rooms, exceptional dining, and unmatched facilities redefine your stay. Immerse yourself in a world of personalized service and explore the vibrant surroundings. Book your stay for an unforgettable experience at Rambagh Palace.");
+                    printf("\n\nWelcome to Rambagh Palace, where luxury and hospitality converge to create an unparalleled experience for our guests. Our hotel is more than just a place to stay; it\'s a destination where comfort, style, and personalized service come together seamlessly. \n\nOur Story: \n\nAt Rambagh Palace, our story is one of passion, dedication, and a commitment to providing exceptional hospitality. Established with the vision of redefining the standard for luxury accommodation, we have curated an environment that transcends the ordinary. From our meticulously designed rooms to our state-of-the-art facilities, every aspect of our hotel reflects a dedication to excellence. \n\nExceptional Accommodation: \n\nStep into a world of refined elegance as you enter our thoughtfully designed rooms and suites. Each space at Rambagh Palace is a testament to our commitment to providing the utmost in comfort and style. Whether you\'re here for business or leisure, our accommodations are tailored to meet the needs of the modern traveler. \n\nDining Excellence: \n\nIndulge your palate at our signature restaurant, where culinary artistry meets a commitment to the finest ingredients. Our expert chefs curate a menu that celebrates both local flavors and international cuisine, ensuring a gastronomic journey that delights and satisfies.  \n\nConveniently located in Pune, our hotel provides easy access to the city\'s vibrant. Whether you\'re here for business, leisure, or a special event, Rambagh Palace serves as your gateway to all that our dynamic surroundings have to offer. \n\nBook Your Stay: \n\nDiscover a world of luxury and hospitality at Rambagh Palace. Book your stay with us and experience the epitome of comfort, style, and personalized service. We look forward to welcoming you to an unforgettable journey at Rambagh Palace. ");
+                    break;
+                case 6:
+                    system("clear");
+                    printf("\n\nContact Us \n");
+                    printf("\n\t\t\tOur Countact Numbers :");
+                    printf("\n\t\t\t\t1. 999 9999 999\n\t\t\t\t2. 888 8888 888\n\t\t\t\t3. 777 7777 777\n\t\t\t\t4. 666 6666 666");
+                    printf("\n\t\t\tThe WhatsApp number : 870 9783 682");
+                    break;
+                case 7:
+                    system("clear");
+                    printf("\n\nOur Social Media Handles Are..\n");
+                    printf("\n\t\t\tFacebook Page - RambaghPalace ");
+                    printf("\n\t\t\tInstagram Page - RambaghPalace");
+                    printf("\n\t\t\tYouTube - RambaghPalace");
+                    printf("\n\t\t\tLinked In - RambaghPalace");
+                    break;
+                case 9:
+                    system("clear");
+                    HMenu();
+                    break;
+                case 0:
+                    // system("clear");
+                    printf("\n\nGreetings : ");
+                    printf("Dear Sir/Ma\'am,\n\n\tWe extend our heartfelt gratitude for choosing Rambagh Palace. Your trust is the cornerstone of our success. Thank you for being a valued part of our community. We appreciate your business and look forward to serving you again. \n\nWarm regards,\n\nRambagh Palace");
+                    printf("Thank You One Again, Please Visit Again :)\n");
+                    exit(0);
+                    break;
+                default :
+                    system("clear");
+                    printf("\n\nWrong Choice, Please Try Again \n");
+                    flag--;
+            }
+            sm++;
+            if(!flag)
+            {
+                printf("\n\nGreetings : ");
+                    printf("Dear Sir/Ma\'am,\n\n\tWe extend our heartfelt gratitude for choosing Rambagh Palace. Your trust is the cornerstone of our success. Thank you for being a valued part of our community. We appreciate your business and look forward to serving you again. \n\nWarm regards,\n\nRambagh Palace");
+                    printf("Thank You One Again, Please Visit Again :)\n");
+                    exit(0);
+            }
+        }
+    }
+    return 0;
+}
